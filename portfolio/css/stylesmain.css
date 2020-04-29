@@ -1,0 +1,216 @@
+* ,*::before, *::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+  /* メニューバー */
+.menu{
+  width:100%;
+  background-color: rgb(219, 217, 217,0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  border-top: 3px double rgb(243, 207, 6);
+  border-bottom: 3px double rgb(243, 207, 6);
+}
+nav ul li{
+  font-size: 19px;
+  display: inline-flex;
+  margin: 8px auto;
+}
+.btn{
+  color: black;
+  margin-right: 30px;
+}
+.header-right a:hover{
+  opacity: 0.8;
+  color: #5983ff;
+  transition: color .3s;
+}
+
+.header-left{
+  display: flex;
+}
+.header-left h1{
+  font-size: 30px;
+  font-weight: bolder;
+  margin:15px 15px 10px 15px;
+  color: black;
+}
+.header-left p{
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 2rem;
+}
+.menuButton {
+ display: none;
+}
+
+
+/* トップ画像 */
+
+
+.top{
+  padding-top:100px;
+  position: relative;  
+  color: gold;
+  text-shadow:2px 3px rgb(30, 22, 22);
+  font-style: italic;
+}
+.top > img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.pic {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.top h1{
+  font-size: 80px;
+  margin-bottom: 0;
+}
+.top p {
+  font-size: 30px;
+  margin: 10px;
+  color: gold;
+}
+.aboutpic > img {
+  opacity: 0.8;
+  border-radius: 50%;
+  border: 1px solid #414141;
+  width: 22rem;
+  height: 20rem;
+}
+.about{
+  display: flex;
+  margin: 150px 40px 0;
+}
+.aboutpic {
+  width: 50%;
+}
+.aboutme {
+  border: 3px solid rgb(32, 32, 31);
+  width: 50%;
+  border-radius: 5%;
+}
+
+/* Topスクロール */
+#scroll_top {
+  display: none;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  opacity: 0.7;
+  background-color: gold;
+  font-size: 1rem;
+  padding: 2rem;
+  margin: 10px;
+  border-radius: 60%;
+}
+.btn_top {
+  color: tomato;
+  text-decoration: none;
+}
+#scroll_top:hover{
+ opacity: 0.9;
+}
+
+/* メイン */
+.main-wrapper{
+  text-align: center;
+}
+.contents-title {
+  background-color:whitesmoke;
+  margin:100px auto 80px;
+  text-align: center;
+}
+.contents .fa{
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+.fab {
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: #55acee;
+}
+
+.contents-title h1{
+  font-size: 50px;
+  margin-bottom:0;
+}
+.contents-title p{
+  margin-top:0;
+}
+.contents h2{
+  margin-top:10px;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+.contents h3{
+  margin:0;
+  font-weight: lighter;
+}
+
+.contents{
+  text-align: center;
+  margin: auto;
+  border:3px solid rgb(46, 110, 150);
+  border-radius: 30px;
+  width:450px;
+  padding: 20px;
+}
+.contents p {
+  font-size: 17px;
+}
+
+.production{
+  height:350px;
+}
+
+.hearing{
+  height:350px;
+}
+
+.price-top{
+  height:300px;
+}
+.price-top h2{
+  font-size: 20px;
+}
+.contact {
+  text-align: center;
+}
+.contact .fa{
+  font-size: 100px;
+}
+.e-mail{
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.twitter{
+  display: inline-block;
+}
+.twitter:hover {
+  opacity: 0.7;
+}
+
+footer {
+ margin-top:50px;
+ height: 150px;
+ line-height: 150px;
+ text-align: center;
+ font-size: 20px;
+ font-weight: lighter;
+ background-color: rgb(109, 113, 113);
+}
+

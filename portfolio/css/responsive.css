@@ -1,0 +1,152 @@
+/* メディアクエリ */
+@media (max-width:1150px) {
+/* ×ボタン表示 */
+.menuButton{
+	display: block;
+	background-color: rgb(219, 217, 217,0);
+	height: 70px;
+	width: 70px;
+	position: fixed;
+	top:0;
+	right:0;
+}
+.menuButton div {
+	height: 2px;
+	width: 60%;
+	background-color: black;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	transition: 0.3s;
+}
+
+/* ×を作る */
+.menuButton div:nth-of-type(1){
+	transform: translate(-50%,-15px)
+}
+.menuButton div:nth-of-type(3){
+	transform: translate(-50%,15px)
+}
+.menuButton.active div:nth-of-type(1){
+ transform: rotate(45deg) translate(-50%,0);
+ transform-origin: 0% 50%;
+}
+.menuButton.active div:nth-of-type(2){
+	opacity: 0;
+}
+.menuButton.active div:nth-of-type(3){
+	transform: rotate(-45deg) translate(-50%,0);
+	transform-origin: 0% 50%;
+}
+
+/* メニュー表示 */
+.header-right {
+	display: none;
+}
+.header-right.active {
+	display: block;
+  position: fixed;
+	top:70px;
+	right:0;
+	width: 40%;
+	height: 80%;
+	background-color: rgba(28, 27, 27, 0.9);
+}
+.header-right a {
+	color: ghostwhite;
+	font-size: 30px;
+}
+.header-right li{
+	display: block;
+	margin: 20px 20px;
+}
+.top h1{
+  font-size: 60px;
+}
+.top p {
+  font-size: 20px;
+}
+.about {
+	flex-direction: column;
+	margin: 50px auto 0;
+}
+.aboutpic,.aboutme {
+	margin: 10px auto 2rem;
+}
+
+}
+
+@media (max-width:700px) {
+  .header-right.active a{
+		margin: 0 auto;
+		font-size: 19px;
+	}
+	.header-right.active ul{
+		padding-left: 20px;
+	}
+	.menuButton div{
+		font-size: 20px;
+		margin: 0 auto;
+	}
+
+/* タイトル */
+  .header-left{
+		flex-direction: column;
+	}
+	.header-left h1 {
+		font-size: 20px;
+		margin-bottom: 0;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+	.header-left p {
+		margin-top: 0;
+		font-size: 10px;
+		margin-left: 20px;
+	}
+
+	.top {
+		height: 25rem;
+	}
+	.top h1{
+		font-size: 2em;
+	}
+   .top p {
+		font-size: 0.9rem;
+	 }
+	 .top > img{
+		 height: 20rem;
+	 }
+	 .pic {
+		position: absolute;
+		top: 40%;
+		left: 4%;
+	}
+	 .about {
+		 margin: 60px auto 0;
+	 }
+	 .aboutpic {
+		 width: auto;
+		 height: auto;
+	 }
+	 .about > img {
+		 width: 1rem;
+	 }
+	 .aboutme {
+		 width: auto;
+		 padding: 10px;
+	 }
+	 .contents{
+		 width: 22rem;
+	 }
+	.e-mail {
+		margin-right: 0;
+		display: block;
+	}
+  #scroll_top {
+		margin: 0;
+		padding: 0.5rem;
+	}
+
+}
