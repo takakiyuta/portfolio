@@ -1,0 +1,62 @@
+@media (max-width:1050px) {
+ .pic p {
+  font-size: 4rem;
+ }
+ .aboutme p{
+   font-size: 1rem;
+ }
+ textarea{
+   width: 35%;
+ }
+}
+
+
+
+@media (max-width:700px) {
+  .pic p {
+    font-size: 3rem;
+   }
+  .subtitle h2 {
+    font-size: 1rem;
+  }
+  .aboutpic {
+    flex-direction: column;
+  }
+  .square {
+    height: 40rem;
+  }
+  .container h2{ 
+   font-size: 2rem;
+   margin-top: 1rem;
+  }
+  .contents h3 {
+    font-size: 0.9rem;
+  }
+  .contents ul li{
+    font-size: 0.7rem;
+  }
+  .delete {
+    display: none;
+  }
+  .map {
+    font-size: 1rem;
+  }
+  .item {
+    margin: 0;
+  }
+  input {
+    font-size: 1rem;
+    height: 1.5rem;
+  }
+  textarea {
+    width: 40%;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  input[type="submit"]{ 
+    font-size: 1rem;
+  }
+  input[type="reset"]{
+    font-size: 1rem;
+  }
+}
